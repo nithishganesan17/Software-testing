@@ -1,0 +1,12 @@
+class code:
+  public static String checkLeapYear(int year) {
+	        return (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) ? year + " is a leap year." : year + " is not a leap year.";
+	    }
+
+	    public static void main(String[] args) {
+	        System.out.println(checkLeapYear(2024));
+	    }
+
+     test code:
+     assertEquals("2024 is a leap year.", LeapYear.checkLeapYear(2024));
+        assertEquals("2021 is not a leap year.", LeapYear.checkLeapYear(2021));

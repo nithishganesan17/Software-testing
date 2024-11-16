@@ -1,0 +1,31 @@
+class:
+    public static long calculateFactorial(int n) {
+	        if (n < 0) {
+	            throw new IllegalArgumentException("Factorial is not defined for negative numbers.");
+	        }
+	        
+	        if (n == 0 || n == 1) {
+	            return 1;
+	        }
+	        
+	        long factorial = 1;
+	        for (int i = 2; i <= n; i++) {
+	            factorial *= i;
+	        }
+	        
+	        return factorial;
+	    }
+
+test:
+void testFactorialofn() {
+		  assertEquals(1, Factorial.calculateFactorial(0));
+           assertEquals(1, Factorial.calculateFactorial(1));
+             assertEquals(120, Factorial.calculateFactorial(5));
+	        assertEquals(3628800, Factorial.calculateFactorial(10));
+	        try {
+	            Factorial.calculateFactorial(-5);
+	            fail("Expected IllegalArgumentException");
+	        } catch (IllegalArgumentException e) {
+	            assertEquals("Factorial is not defined for negative numbers.", e.getMessage());
+	}
+	

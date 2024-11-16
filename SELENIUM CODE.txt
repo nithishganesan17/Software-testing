@@ -1,0 +1,3 @@
+System.setProperty("web.Chrome.Driver","C:\\web\\CromeDriver\\CurrentVersion\\chromedriver-win64.zip\\chromedriver-win64");
+		ChromeDriver d = new ChromeDriver();
+		d.get("http://google.com");

@@ -1,0 +1,16 @@
+class code:
+
+public class StringCompare {
+	    public static void main(String[] args) {
+	        String str1 = "Hello";
+	        String str2 = "hello";
+	        System.out.println(str1.equals(str2) ? "Strings are equal." : "Strings are not equal.");
+	    }
+	}
+
+test code:
+
+
+	String str1 = "Hello";
+ String str2 = "Hello";
+ assertEquals(str1,str2);

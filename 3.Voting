@@ -1,0 +1,24 @@
+class1  code:
+
+public static String checkEligibility(int age)
+ {
+    if (age >= 18) {
+        return "Eligible for voting";
+    } 
+    else {
+        return "Not eligible for voting";
+    }
+ }
+
+ test code:
+  assertEquals("Eligible for voting", class1.checkEligibility(18));
+    assertEquals("Eligible for voting", class1.checkEligibility(21));
+    assertEquals("Eligible for voting", class1.checkEligibility(30));
+}
+
+@Test
+ void testNonEligibleVoter() {
+    assertEquals("Not eligible for voting", class1.checkEligibility(17));
+    assertEquals("Not eligible for voting", class1.checkEligibility(16));
+    assertEquals("Not eligible for voting", class1.checkEligibility(12));
+}

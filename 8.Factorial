@@ -1,0 +1,13 @@
+class code:
+
+public static long calculateFactorial(int n) {
+	    
+	    long factorial = 1;
+	    for (int i = 2; i <= n; i++) factorial *= i;
+	    return n == 0 ? 1 : factorial;
+	}
+
+test code:
+assertEquals(1, class1.calculateFactorial(0));
+        assertEquals(1, class1.calculateFactorial(1));
+          assertEquals(120, class1.calculateFactorial(5));

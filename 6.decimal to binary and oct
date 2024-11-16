@@ -1,0 +1,19 @@
+class code:
+
+public static String decimalToBinary(int decimal) {
+        return Integer.toBinaryString(decimal);
+    }
+
+    // Method to convert decimal to octal
+    public static String decimalToOctal(int decimal) {
+        return Integer.toOctalString(decimal);
+    }
+testcode:
+  assertEquals("1010", NumberConverter.decimalToBinary(10)); // Binary of 10 is "1010"
+    }
+
+    // Test for decimal to octal conversion
+    @Test
+    public void testDecimalToOctal() {
+        assertEquals("12", NumberConverter.decimalToOctal(10)); // Octal of 10 is "12"
+    }

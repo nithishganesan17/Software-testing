@@ -1,0 +1,15 @@
+class:
+ public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter a decimal number: ");
+	        double number = scanner.nextDouble();
+	        
+	        System.out.println("Square: " + (number * number));
+	        System.out.println("Cube: " + (number * number * number));
+	    }
+
+     test:
+      double number = 2.5;
+	        
+	        assertEquals(6.25, number * number, 0.0001);  // Checking square
+	        assertEquals(15.625, number * number * number, 0.0001); 

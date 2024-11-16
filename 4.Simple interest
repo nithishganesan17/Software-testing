@@ -1,0 +1,11 @@
+classs code:
+
+	public static double calculateSimpleInterest(double p, double r, double t) {
+	    return p * r * t / 100;
+	}
+
+
+test code:
+
+assertEquals(200.0,class1.calculateSimpleInterest(1000.0, 5.0, 4.0), 0.01);
+	
